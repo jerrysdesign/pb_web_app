@@ -1,0 +1,11 @@
+# templates/projuct/source/
+
+templates/.DS_Store
+templates/projuct/.DS_Store
+templates/projuct/source/.DS_Store
+
+templates/projuct/source/_notes/*
+templates/projuct/source/.sass-cache/*
+templates/projuct/source/stylesheets/*
+templates/projuct/source/fire_app_log.txt
+templates/projuct/source/config.rb
