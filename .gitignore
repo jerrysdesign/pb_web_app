@@ -1,11 +1,11 @@
-# templates/projuct/source/
+# templates/project/source/
 
 templates/.DS_Store
-templates/projuct/.DS_Store
-templates/projuct/source/.DS_Store
+templates/project/.DS_Store
+templates/project/source/.DS_Store
 
-templates/projuct/source/_notes/*
-templates/projuct/source/.sass-cache/*
-templates/projuct/source/stylesheets/*
-templates/projuct/source/fire_app_log.txt
-templates/projuct/source/config.rb
+templates/project/source/_notes/*
+templates/project/source/.sass-cache/*
+templates/project/source/stylesheets/*
+templates/project/source/fire_app_log.txt
+templates/project/source/config.rb
