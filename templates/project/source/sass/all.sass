@@ -1,0 +1,44 @@
+// import all things
+@import compass
+//
+@import basic/bourbon/bourbon
+@import basic/neat/neat
+//
+@import basic/normalize/normalize
+@import basic/typeplate/vars-typeplate
+@import basic/typeplate/typeplate
+
+//var mixin color
+@import setting
+@import colors
+//plugin
+@import retina
+
+//rest
+// html , body
+//   font-size: $base-font-size
+//   line-height: $base-line-height
+
+body
+  color: #5a5a5a
+  background: #fafafa
+  vertical-align: middle
+
+h1,h2,h3,h4,h5,h6
+  @extend %helvetica-bold
+
+a
+  outline: none !important
+  color: darken($color1, 20%)
+  text-decoration: none
+  &:hover, &:focus
+    color: darken($color1, 30%)
+    text-decoration: none
+img
+  max-width: 100%
+
+// @import compass/reset
+@import layout
+@import _layout/layout
+@import pages
+

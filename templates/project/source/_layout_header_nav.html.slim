@@ -1,0 +1,18 @@
+nav#navigation role="navigation"
+  .nav-bg
+  .region.region-navigation.container
+    .logo
+      a.active href="/"
+    / #sidr-wrapper-0 style="display: none;"
+    /   a#sidr-0-button href="#sidr-0" 
+    /     #menu-toggler
+    #sidr-wrapper-0
+      a#sidr-0-button href="#sidr-0"
+        #menu-toggler
+    #main-menu.responsive-menus-sidr
+      ul.menu
+        = nav_link_to("About As", "/about/", :class => "recommended_reading")
+        = nav_link_to("What We Do", "/what/", :class => "what_i_do")
+        = nav_link_to("award", "/award/", :class => "award")
+        = nav_link_to("contact", "/contact/", :class => "contact")
+    a#menu-toggler.toggle href="#right"

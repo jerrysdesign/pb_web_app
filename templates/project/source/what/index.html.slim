@@ -1,0 +1,46 @@
+= content_for :title do 
+  <title>What we do</title>
+
+/! PAGE
+.page.sub.what
+  = render '/layout_header_nav'
+  #header
+    .header-content
+
+  .container
+    .main-content
+      h1.header-title What we do
+      p
+        | PassionBean是專注樂活、科技、行動的軟體新創公司，我們開發並經營行銷的產品有辦公室舒緩趣、雲端減重紀錄、LOCOMO 運動紀錄、FitMi雲短減重服務...等。我們的產品，一直以來在App Stor與Google Play，皆取得良好的下載成績，並且累積穩定的用戶群，與健康主題的回饋。
+        br
+        | 接下來，我們的開發團隊瞄準更大的區域市場、及更精準的用戶族群為目標，推出極具創新和友善的無線應用健康產品。
+        / 如欲了解我們的團隊技術背景，請參閱我們過去曾參與的成功案例。
+        / **現正招募中! 更多詳情請見 人才招募.**
+  .projects
+    .container
+      .row
+
+        .project-wrapper.column.fourth
+          img src="/images/test1.gif"
+          h3 辦公室舒緩趣
+
+        .project-wrapper.column.fourth
+          img src="/images/selectedproduct.gif"
+          h3 雲端減重紀錄
+
+        .project-wrapper.column.fourth
+          img src="/images/locomo_ui_mockup.jpg"
+          h3 LOCOMO 運動紀錄
+
+        .project-wrapper.column.fourth.flow-opposite
+          img src="/images/fitmi_ui_mockup.jpg"
+          h3 FitMi
+
+  / /! FOOTER
+  / footer
+  /   .container.footer-container
+  /     .bulb-icon
+  /     .footer-content
+  /       .row
+  /         h4 =zh_lorem_sentence
+  /         p =zh_lorem_paragraphs 3

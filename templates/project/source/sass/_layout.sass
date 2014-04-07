@@ -1,0 +1,73 @@
+@import basic/neat/neat-helpers
+$visual-grid: true
+$visual-grid-color: red
+$visual-grid-index: front
+$visual-grid-opacity: 0.9
+//
+// media([$first-feature] $first-value [$second-feature, $second-value], [$total-columns])
+// media($first-feature $first-value [$second-feature, $second-value] [$total-columns])
+// Change the grid settings
+$column: 80px
+$gutter: 30px
+$grid-columns: 13
+$base-value: 13
+$max-width: em(1140)
+// $desktop: min-width 1140px
+$tablet: new-breakpoint(max-width 960px 13)
+$pad:    new-breakpoint(max-width 768px 9)
+$mobile: new-breakpoint(max-width 480px 4)
+
+html
+  +fill-parent
+
+.wrapper,
+.container
+  +outer-container
+  // +media($desktop)
+  //   +span-columns(12)
+  // +media($tablet)
+  //   +span-columns(8)
+  +media($tablet)
+    +pad(0 1em)
+  +media($mobile)
+    text-align: center
+.row
+  +clearfix
+
+.column
+  float: left
+  padding-left: 1rem
+  padding-right: 1rem
+  +media($mobile)
+    padding: 0
+    margin-bottom: 1em
+  &.full
+    width: 100%
+  &.two-thirds
+    width: 66.7%
+    +media($mobile)
+      +span-columns(4)
+  &.half
+    width: 50%
+    +media($mobile)
+      +span-columns(4)
+  &.third
+    width: 33.3%
+    +media($mobile)
+      +span-columns(4)
+  &.fourth
+    width: 24.95%
+    +media($mobile)
+      +span-columns(4)
+  &.flow-opposite
+    float: right
+
+//共用
+.main-content
+  padding: 100px 0
+.header-title
+  @extend %helvetica-light
+  font-size: 2em
+  padding: 10px 0
+  border-bottom: 1px solid #d3d3d3
+  margin-bottom: 20px

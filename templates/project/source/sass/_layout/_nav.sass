@@ -1,0 +1,103 @@
+#navigation
+  width: 100%
+  position: fixed
+  background-color: transparent
+  z-index: 20
+  top: 0
+  .nav-bg
+    position: absolute
+    background-color: #fff
+    opacity: 0
+    width: 100%
+    height: 140px
+    z-index: -1
+    top: 0
+    left: 0
+    +transition (height 0.3s)
+  .region
+    height: 140px
+    text-align: center
+    position: relative
+    +transition (all 0.3s ease-in -out 0s)
+    .logo
+      position: absolute
+      left: 20px
+      top: 44px
+      +transition (all 0.3s)
+      a
+        display: block
+        width: 176px
+        height: 67px
+        background: url("../images/logo.png") no-repeat left center
+    #main-menu
+      position: absolute
+      top: 57px
+      right: 88px
+      //+transition (all .3s ease-in -out 0s)
+      +transition (all 0.3s)
+
+      ul.menu
+        li
+          list-style: none
+          float: left
+          position: relative
+          width: auto
+          z-index: 5
+          a
+            color: #111
+            text-transform: uppercase
+            text-decoration: none
+            font-family: "Gotham A", "Gotham B", sans-serif
+            font-size: .875em
+            padding: 15px
+            position: relative
+            display: block
+            &.active, &.active-trail, &:hover
+              color: #40baca
+        li + li
+          margin-left: 20px
+    .toggle
+      cursor: pointer
+      background: url("../images/toggler-open.svg") no-repeat
+      +transition (all.3s)
+      +size (32px 36px)
+      position: absolute
+      top: 80px
+      right: 20px
+      .show-right &
+        +transition (none)
+        background: url("../images/toggler-close.svg") no-repeat
+
+  &.small
+    .nav-bg
+      background-color: rgba(40,40,40,0.9)
+      opacity: 1
+      height: 96px
+    .region
+      height: 95px
+      .logo
+        top: 15px
+        a
+          background: url("../images/logo_only.png") no-repeat left center
+          opacity: 1
+      .toggle
+        top: 35px
+      #main-menu
+        top: 9px
+        ul.menu li a
+          color: white
+          &.active, &.active-trail, &:hover
+            color: $color2
+
+#gototop
+  opacity: 0
+  width: 40px
+  height: 40px
+  position: fixed
+  right: 0
+  bottom: 0
+  margin-top: -20px
+  background: url("../images/up.png") no-repeat 0 -40px
+  cursor: pointer
+  &:hover
+    background: url("../images/up.png") no-repeat 0 0

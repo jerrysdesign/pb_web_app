@@ -1,0 +1,82 @@
+body
+  width: 100%
+  margin-right: -100%
+  float: left
+  &.show-right 
+    +transition (all 0.3s)
+    margin-left: -260px
+    
+.show-right
+  .page
+    position: relative
+  #navigation
+    position: absolute
+
+#sidr-wrapper-right
+  width: 260px
+  float: right
+  margin-right: -100%
+  opacity: 0
+  
+  .show-right &
+    margin-right: 0
+    opacity: 1
+
+.right
+  .show-right &
+    +opacity(1)
+  //@include at-breakpoint($large-columns) @include opacity(1)
+
+.sub #navigation .region #main-menu ul.menu li a
+  color: #fff
+
+
+#sidr-wrapper-right
+  background: none repeat scroll 0 0 #191919
+  padding-top: 39px
+  box-shadow: none
+  color: #fff
+  display: none
+  height: 100%
+  position: fixed
+  top: 0
+  right: 0
+  width: 260px
+  z-index: 999999
+  .rightcont
+    padding: 0 0 15px
+  ul
+    +reset-list-style
+    +reset-box-model
+    display: block
+    margin: 0 0 15px
+    padding: 0
+    border-top: 1px solid #1a1a1a
+    border-bottom: 1px solid #4d4d4d
+    li
+      border-top: 1px solid #4d4d4d
+      border-bottom: 1px solid #1a1a1a
+      a
+        color: #FFFFFF
+        display: block
+        padding: 10px
+        text-decoration: none
+        font-size: 1em
+        line-height: 2
+        font-weight: 500
+        text-transform: uppercase
+
+// .toggle
+//   display: block
+  
+//   margin-top: 30px
+//   width: 50px
+//   height: 50px
+//   background-color: #555
+//   text-decoration: none
+//   text-align: center
+//   &:hover
+//     text-decoration: none
+  
+ 
+

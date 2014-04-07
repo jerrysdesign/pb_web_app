@@ -1,0 +1,36 @@
+// vertical rhythm
+$base-font-size: 16px
+$base-line-height: 24px
+$relative-font-sizing: false
+
+// class variable
+$page-container: ".container"
+
+body
+  -webkit-text-size-adjust: 100%
+  -webkit-font-smoothing: antialiased
+  text-rendering: optimizeLegibility
+
+%helvetica-bold
+  font-family: "AvenirNext-UltraBold", "Avenir-Bold", "Roboto-Thin", "Roboto", "HelveticaNeue-Bold", "Helvetica", "Arial", sans-serif
+  font-weight: 600
+
+%helvetica-light
+  font-family: "AvenirNext-UltraLight", "Avenir-Light", "Roboto-Thin", "Roboto", "HelveticaNeue-Light", "Helvetica", "Arial", sans-serif
+  font-weight: 100
+
+// hack for android 4.4
+@font-face
+  font-family: "Roboto-Thin"
+  font-weight: 100
+  src: local("sans-serif-thin")
+
+// Mixin
+// reset
+= reset-list-style
+  list-style: none
+
+= reset-box-model
+  margin: 0
+  padding: 0
+  border: 0

@@ -1,0 +1,45 @@
+#header
+  background-image: url("../images/banner_index.jpg")
+  background-repeat: no-repeat
+  background-position: center bottom
+  height: 800px
+  +background-size (cover)
+
+  .desc
+    position: absolute
+    left: 20px
+    top: 60%
+    .bgc
+      background: #0c9a8c
+      width: 1px
+      height: 1px
+    .link
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      position: absolute
+      z-index: 2
+      text-indent: -9999px
+      overflow: hidden
+      a
+        display: block
+        width: 100%
+        height: 100%
+.sub
+  #header
+    height: 618px
+    background-repeat: no-repeat
+    background-position: center top
+  &.about
+    #header
+      background-image: url("../images/banner/1.jpg")
+  &.what
+    #header
+      background-image: url("../images/banner/2.jpg")
+  &.award
+    #header
+      background-image: url("../images/banner/3.jpg")
+  &.contact
+    #header
+      background-image: url("../images/banner/4.jpg")
